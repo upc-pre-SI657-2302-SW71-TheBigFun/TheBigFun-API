@@ -24,9 +24,6 @@ public class OrganizersController {
 
     private EventFilterService eventFilterService;
 
-
-
-
     public OrganizersController(OrganizerService organizerService, OrganizerMapper mapper1, EventMapper mapper2) {
         this.organizerService = organizerService;
         this.organizerMapper = mapper1;
