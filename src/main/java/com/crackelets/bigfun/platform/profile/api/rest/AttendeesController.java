@@ -35,6 +35,7 @@ public class AttendeesController {
         return mapper.modelListPage(attendeeService.getAll(), pageable);
     }
 
+
     @GetMapping("{attendeeId}")
     public AttendeeResource getAttendeeById(@PathVariable Long attendeeId) {
         return mapper.toResource(attendeeService.getById(attendeeId));
