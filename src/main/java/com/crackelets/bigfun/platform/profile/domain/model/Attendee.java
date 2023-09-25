@@ -42,6 +42,7 @@ public class Attendee {
     @OneToMany(cascade = CascadeType.ALL,fetch = FetchType.EAGER,mappedBy = "attendee")
     private Set<AttendeeEvent>eventsListByAttendee;
 
+
     public void addEvent(Attendee attendee,Long eventId){
         if(eventsListByAttendee==null) eventsListByAttendee=new HashSet<>();
         this.eventsListByAttendee.add(new AttendeeEvent(this,eventId));

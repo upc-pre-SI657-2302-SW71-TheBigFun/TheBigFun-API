@@ -62,6 +62,7 @@ public class AttendeesController {
         return mapper.toResource(attendeeService.update(attendeeId, mapper.toModel(resource)));
     }
 
+
     @DeleteMapping("{attendeeId}")
     public ResponseEntity<?> deleteAttendee(@PathVariable Long attendeeId) {
         return attendeeService.delete(attendeeId);
