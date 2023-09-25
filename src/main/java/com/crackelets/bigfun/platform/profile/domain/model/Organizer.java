@@ -49,7 +49,4 @@ public class Organizer extends AuditModel {
 
         return this;
     }
-
-
-
 }
