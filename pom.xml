@@ -109,29 +109,27 @@
         </dependency>
 
 
-        <!-- SECURITY -->
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
         </dependency>
 
-
-        <!-- https://mvnrepository.com/artifact/io.jsonwebtoken/jjwt-api -->
-
-
-        <!-- DEPENDENCIAS AGREGADAS CON LA FE -->
         <dependency>
             <groupId>io.jsonwebtoken</groupId>
             <artifactId>jjwt</artifactId>
             <version>0.9.1</version>
         </dependency>
-
-
     </dependencies>
 
     <build>
         <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>3.1.0</version>
+            </plugin>
+
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
@@ -144,7 +142,15 @@
                     </excludes>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>com.google.cloud.tools</groupId>
+                <artifactId>appengine-maven-plugin</artifactId>
+                <version>2.4.4</version>
+                <configuration>
+                    <version>1</version>
+                    <projectId>the-big-fun-400223</projectId>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
-
 </project>
