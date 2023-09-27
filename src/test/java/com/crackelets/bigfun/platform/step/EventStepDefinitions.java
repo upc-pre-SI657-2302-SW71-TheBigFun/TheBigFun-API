@@ -3,9 +3,6 @@ package com.crackelets.bigfun.platform.step;
 import com.crackelets.bigfun.platform.booking.domain.model.Event;
 import com.crackelets.bigfun.platform.booking.domain.persistence.EventRepository;
 import com.crackelets.bigfun.platform.booking.resource.CreateEventResource;
-import com.crackelets.bigfun.platform.profile.domain.model.Organizer;
-import com.crackelets.bigfun.platform.profile.domain.persistence.OrganizerRepository;
-import com.crackelets.bigfun.platform.profile.resource.CreateOrganizerResource;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -17,7 +14,7 @@ import io.cucumber.spring.CucumberContextConfiguration;
 import org.junit.Assert;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.web.client.TestRestTemplate;
-import org.springframework.boot.test.web.server.LocalServerPort;
+import org.springframework.boot.web.server.LocalServerPort;
 import org.springframework.http.*;
 
 import java.util.Date;

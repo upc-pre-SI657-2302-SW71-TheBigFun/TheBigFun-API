@@ -50,7 +50,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                         "/api/v1/userss/auth/*",
                         "/api/v1/**",
                         "/api/v1/userss",
- /*                       "/api/v1/attendees",
+                       "/api/v1/attendees",
                         "/api/v1/attendees/*",
                         "/api/v1/events",
                         "/api/v1/events/*",
@@ -62,9 +62,9 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                         "/api/v1/organizers",
                         "/api/v1/organizers/*",
                         "/api/v1/organizersto",
-                        "/api/v1/organizersto/**",*/
+                        "/api/v1/organizersto/**",
                         "/swagger-ui/**",
-                        "/api-docs/**").permitAll()
+                        "/v3/api-docs/**").permitAll()
                 .anyRequest().authenticated();
         http.addFilterBefore(authorizationFilter(), UsernamePasswordAuthenticationFilter.class);
     }

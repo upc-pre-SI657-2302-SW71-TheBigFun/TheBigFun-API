@@ -14,7 +14,7 @@ import io.cucumber.spring.CucumberContextConfiguration;
 import org.junit.Assert;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.web.client.TestRestTemplate;
-import org.springframework.boot.test.web.server.LocalServerPort;
+import org.springframework.boot.web.server.LocalServerPort;
 import org.springframework.http.*;
 
 import java.util.Map;
