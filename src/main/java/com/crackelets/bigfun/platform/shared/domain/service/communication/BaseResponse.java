@@ -1,7 +1,6 @@
 package com.crackelets.bigfun.platform.shared.domain.service.communication;
 
 import lombok.Getter;
-import org.apache.logging.log4j.util.Strings;
 
 @Getter
 public abstract class BaseResponse<T> {
@@ -19,7 +18,7 @@ public abstract class BaseResponse<T> {
 
     public BaseResponse(T resource) {
         this.success = true;
-        this.message = Strings.EMPTY;
+        this.message = "";
         this.resource = resource;
     }
 }
